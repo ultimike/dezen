@@ -1,0 +1,1 @@
+This is a Zen-based sub-theme used in DrupalEasy's Introduction to Theming workshops for Drupal 7.x.

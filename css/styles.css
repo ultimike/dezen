@@ -1,0 +1,222 @@
+/**
+ * @file
+ * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
+ *
+ * When you turn on CSS aggregation at admin/config/development/performance, all
+ * of these @include files will be combined into a single file.
+ */
+
+/* HTML element (SMACSS base) rules */
+@import "normalize.css";
+
+/* Layout rules */
+@import "layouts/responsive.css";
+
+/* Component (SMACSS module) rules */
+@import "components/misc.css";
+/* Optionally, add your own components here. */
+@import "print.css";
+
+/* SMACSS theme rules */
+/* @import "theme-A.css"; */
+/* @import "theme-B.css"; */
+
+h1.title {
+
+  font-family: Georgia,serif;
+
+  font-size: 2.5em;
+
+  font-weight: normal;
+
+}
+
+.node {
+
+  font-family: "Helvetica Neue", Arial, sans-serif;
+
+  color: #3F3F3F;
+
+  font-size: 0.9em;
+
+}
+
+
+
+.node a {
+
+  color: #00A5E9;
+
+  text-decoration: none;
+
+}
+
+
+
+.node a:hover {
+
+  text-decoration: underline;
+
+}
+
+
+
+.node .submitted {
+
+  line-height: 1.1em;
+
+  border-top: 1px solid #95c3b9;
+
+  border-bottom: 1px solid #95c3b9;
+
+  padding: 6px 0 8px 0;
+
+}
+
+
+
+.field-name-field-tags {
+
+  line-height: 1.1em;
+
+  border-bottom: 1px solid #95c3b9;
+
+  padding: 6px 0 8px 0;
+
+}
+
+
+
+.field-name-field-tags .field-label {
+
+  display: inline;
+
+  font-weight: normal;
+
+}
+
+
+
+.field-name-field-tags .field-items,
+
+.field-name-field-tags .field-item {
+
+  display: inline;
+
+}
+
+
+
+.field-name-field-tags .field-item {
+
+  padding-right: 3px;
+
+}
+
+
+
+
+
+
+
+
+
+
+#header {
+  background-color: #ca0002;
+  position: relative;
+  height: 90px;
+  text-align: center;
+}
+
+#logo {
+  display: none;
+}
+
+#name-and-slogan {
+  float: none;
+  margin-top: 15px;
+}
+
+#name-and-slogan a {
+  color: #FFF;
+  font-size: 2em;
+}
+
+#secondary-menu {
+  position: absolute;
+  top: 0px;
+  right: 25px;
+}
+
+#secondary-menu li {
+  padding-right: 0;
+}
+
+#secondary-menu li a {
+  color: #FFF;
+  font-size: 0.8em;
+  text-decoration: none;
+}
+
+#secondary-menu li a:hover {
+  text-decoration: underline;
+}
+
+header .region-header {
+  position: absolute;
+  right: 25px;
+  top: 35px;
+}
+
+#main #navigation {
+  background-color: #ddd;
+  padding: 0 0 5px 0;
+  height: auto;
+}
+
+#main #navigation nav {
+  background-color: #ca0002;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#main #navigation nav ul {
+  background-color: #900;
+  height: 40px;
+  display: block;
+}
+
+#main #navigation nav li {
+  border: 1px solid #900;
+  border-bottom: none;
+  height: 39px;
+  padding: 0;
+  background-color: #ca0002;
+}
+
+#main #navigation nav li.active {
+  background-color: #ddd;
+}
+
+#main #navigation nav li:hover {
+  background-color: #900;
+}
+
+#main #navigation nav li.active:hover {
+  background-color: #ddd;
+}
+
+#main #navigation nav li a {
+  line-height: 39px;
+  display: block;
+  padding: 0 5px;
+  color: #FFF;
+  font-size: 0.7em;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#main #navigation nav li.active a {
+  color: #ca0002;
+}
